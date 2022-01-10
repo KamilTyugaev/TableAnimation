@@ -35,11 +35,11 @@ class TableViewController: UITableViewController {
         tableView.reloadData()
         
         let cells = tableView.visibleCells
-        let tableViewWidth = tableView.bounds.width
+        let tableViewHeight = tableView.bounds.height
         var delay:Double = 0
         
         for cell in cells{
-            cell.transform = CGAffineTransform(translationX: tableViewWidth, y: 0)
+            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
             
             UIView.animate(withDuration: 1.5,
                            delay: delay * 0.05,
